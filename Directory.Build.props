@@ -1,0 +1,13 @@
+<Project>
+
+  <!--
+    The Cosmos release the kit builds against. A kernel that references the
+    project and is on another release passes its own, so the kit and the
+    kernel ask for the same one:
+      dotnet build -p:CosmosVersion=3.0.96
+  -->
+  <PropertyGroup>
+    <CosmosVersion Condition="'$(CosmosVersion)' == ''">3.0.97</CosmosVersion>
+  </PropertyGroup>
+
+</Project>

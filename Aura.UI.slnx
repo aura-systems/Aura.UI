@@ -1,0 +1,5 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Aura.UI/Aura.UI.csproj" />
+  </Folder>
+</Solution>
