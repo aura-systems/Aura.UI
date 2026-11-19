@@ -1,6 +1,6 @@
 # Aura.UI
 
-The UI kit of [Aura Operating System](https://github.com/aura-systems/Aura-Operating-System) as a library, for any kernel built on Cosmos gen3. It draws on `Cosmos.Kernel.System`'s `Canvas` and needs nothing else.
+The UI kit of [AuraOS](https://github.com/aura-systems/Aura-Operating-System) and [PegasiOS](https://github.com/valentinbreiz/PegasiOS) as a library, for any kernel built on Cosmos gen3. It draws on `Cosmos.Kernel.System`'s `Canvas` and needs nothing else.
 
 PegasiOS builds its phone shell on it. Aura and GlieseOS can reference it the same way; neither has been moved onto it yet.
 
