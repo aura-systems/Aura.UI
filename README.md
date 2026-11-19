@@ -4,24 +4,6 @@ The UI kit of [AuraOS](https://github.com/aura-systems/Aura-Operating-System) an
 
 PegasiOS builds its phone shell on it. Aura and GlieseOS can reference it the same way; neither has been moved onto it yet.
 
-## Where the code comes from
-
-`SRC/Aura_OS/System/Graphics/UI/GUI` of Aura at commit `821a5f15`, with the parts of Aura's mouse manager, keyboard manager and window manager that only deal with components. The files keep Aura's headers, style and public names.
-
-| In `src/Aura.UI/` | From Aura |
-|---|---|
-| `Components/`: `Component`, `Button`, `Checkbox`, `DropDown`, `EditMenu`, `Label`, `ListBox`, `Panel`, `Picture`, `RightClick`, `Slider`, `Surface`, `TextBox`, `Window` | `GUI/Components/` |
-| `Skin/`: `Frame`, `RegionListBuilder`, `SkinParsing`, `ThemeManager` | `GUI/Skin/` |
-| `Layout/`: `LayoutNode`, `StackNode`, `GridNode`, `PanelNode`, `ControlNode` | `GUI/Layout/` |
-| `Rectangle`, `TextClipboard` | `GUI/Rectangle.cs`, `System/TextClipboard.cs` |
-| `WindowManager` | the component half of `GUI/WindowManager.cs` |
-| `PointerManager` | `System/Input/MouseManager.cs` |
-| `KeyboardInput` | `System/Input/KeyboardManager.cs` |
-| `Parser/NanoXMLParser.cs` | `System/Parser/` |
-| `Resources/`: the Suave skin, the window and cursor icons | `Resources/UI/` |
-
-What stayed in Aura because it is Aura's desktop and not a kit: `Application`, `Desktop`, `Dialog`, `LoginScreen`, `StartMenu`, `Taskbar`, the `Console` and `Filesystem` components, `ClipboardButton`, `KeyboardLayoutButton`, and the loader of layout files (`AppLayout`, `LayoutLoader`), which builds Aura applications and dialogs.
-
 ## Referencing it
 
 The kit is not published as a package. A kernel builds it from a clone of this repository next to its own, through a project reference. PegasiOS does, from `src/PegasiOS/PegasiOS.csproj`:
